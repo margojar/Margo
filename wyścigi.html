@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Formuła 1</title>
+          <style>
+            body {
+              font-family: Arial, sans-serif;
+                 line-height: 1.6;
+                  margin: 0;
+                  padding: 0;
+                   background-color: #333333;
+            }
+             .container {
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+             }
+            header {
+                background: #333333;
+                color: #ffffff;
+                padding-top: 30px;
+                min-height: 70px;
+            border-bottom: #77d42a 3px solid;
+            }
+             header a {
+                color: #ffffff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 16px;
+             }
+             header ul {
+                padding: 0;
+                list-style: none;
+            }
+            header li {
+                display: inline;
+                padding: 0 20px 0 20px;
+            }
+            .main {
+                padding: 20px;
+                background: #fff;
+                margin-top: 20px;
+            }
+            footer {
+                background: #333;
+                color: #ffffff;
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+             </style>
+             </head>
+             <body>
+               <header>
+                <div class="container">
+                    
+                    <nav>
+                     <section>
+                        <span style="font-size:xx-large">Formuła 1</span>
+                     <div style="text-align:right">
+            <img.specific src="https://www.carlander.ba/wp-content/uploads/2021/03/F1-logo-2022.jpg" alt="F1" width=30%, height=40%>
+        </section>
+        </div>
+                        <ul>
+
+                            <li><a href="stronagłówna.html">Strona główna</a></li>
+                            <li><a href="aktualności.html">Aktualności</a></li>
+                            <li><a href="wyścigi.html" style="color: gold;">Wyścigi</a></li>
+                            <li><a href="kierowcy.html">Kierowcy</a></li>
+                            <li><a href="drużyny.html">Drużyny</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header> 
+                         </body>
+                         <head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Torów F1 2025</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map { height: 600px; }
+        .popup-image { width: 200px; height: auto; }
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Mapa Torów F1 2025</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([20, 0], 2); 
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        var circuits = [
+            { name: "GP Australii - Melbourne", lat: -37.8497, lon: 144.968, date: "16 marca 2025", time: "5:00", image: "https://cdn-8.motorsport.com/images/ltp/pK6x50QB/s6/melbourne-grand-prix-circuit.png" },
+            { name: "GP Chin - Shanghai", lat: 31.338, lon: 121.22, date: "23 marca 2025", time: "8:00", image: "https://cdn-4.motorsport.com/images/ltp/1z0qggYN/s6/shanghai-international-circuit.png" },
+            { name: "GP Japonii - Suzuka", lat: 34.843, lon: 136.541, date: "6 kwietnia 2025", time: "7:00", image: "https://cdn-9.motorsport.com/images/ltp/Dx6zop0G/s6/suzuka-2.png" },
+            { name: "GP Bahrajnu - Bahrain", lat: 26.0325, lon: 50.5106, date: "13 kwietnia 2025", time: "17:00", image: "https://cdn-1.motorsport.com/images/ltp/R56l86NX/s6/bahrain-international-circuit-5.png" },
+            { name: "GP Arabii Saudyjskiej - Jeddah", lat: 21.5433, lon: 39.1728, date: "20 kwietnia 2025", time: "19:00", image: "https://cdn-7.motorsport.com/images/ltp/J0rNqy0n/s6/jeddah-street-circuit.png" },
+            { name: "GP Miami - Miami Autodrome", lat: 25.958, lon: -80.239, date: "4 maja 2025", time: "22:00", image: "https://cdn-8.motorsport.com/images/ltp/Q688RV6L/s6/miami-international-autodrome.png" },
+            { name: "GP Emilia-Romagna - Imola", lat: 44.3439, lon: 11.7131, date: "18 maja 2025", time: "15:00", image: "https://cdn-9.motorsport.com/images/ltp/R56lPD6N/s6/imola.png" },
+            { name: "GP Monako - Monte Carlo", lat: 43.7347, lon: 7.4206, date: "25 maja 2025", time: "15:00", image: "https://cdn-2.motorsport.com/images/ltp/9rYEMGYK/s6/monte-carlo.png" },
+            { name: "GP Hiszpanii - Barcelona", lat: 41.57, lon: 2.261, date: "1 czerwca 2025", time: "15:00", image: "https://cdn-7.motorsport.com/images/ltp/1z0qK4YN/s6/circuit-de-barcelona-catalunya.png" },
+            { name: "GP Kanady - Montreal", lat: 45.5, lon: -73.5, date: "15 czerwca 2025", time: "21:00", image: "https://cdn-8.motorsport.com/images/ltp/bOYvBZYV/s6/circuit-gilles-villeneuve.png" },
+            { name: "GP Austrii - Red Bull Ring", lat: 47.219, lon: 14.764, date: "29 czerwca 2025", time: "15:00", image: "https://cdn-8.motorsport.com/images/ltp/en0mdM6z/s6/red-bull-ring.png" },
+            { name: "GP Wielkiej Brytanii - Silverstone", lat: 52.0786, lon: -1.0169, date: "6 lipca 2025", time: "16:00", image: "https://cdn-1.motorsport.com/images/ltp/nqYK1r0Z/s6/silverstone.png" },
+            { name: "GP Belgii - Spa-Francorchamps", lat: 50.437, lon: 5.971, date: "27 lipca 2025", time: "15:00", image: "https://cdn-5.motorsport.com/images/ltp/1b6n7o0z/s6/spa-francorchamps-2.png" },
+            { name: "GP Węgier - Hungaroring", lat: 47.578, lon: 19.248, date: "3 sierpnia 2025", time: "15:00", image: "https://cdn-3.motorsport.com/images/ltp/j86ARv0b/s6/hungaroring.png" },
+            { name: "GP Holandii - Zandvoort", lat: 52.388, lon: 4.540, date: "31 sierpnia 2025", time: "15:00", image: "https://cdn-5.motorsport.com/images/ltp/1824BA6N/s6/zandvoort.png" },
+            { name: "GP Włoch - Monza", lat: 45.6156, lon: 9.2811, date: "7 września 2025", time: "15:00", image: "https://cdn-5.motorsport.com/images/ltp/D80Zro0e/s6/autodromo-nazionale-monza.png" },
+            { name: "GP Azerbejdżanu - Baku", lat: 40.372, lon: 49.853, date: "21 września 2025", time: "13:00", image: "https://cdn-6.motorsport.com/images/ltp/1b6nmXYz/s6/baku-city-circuit.png" },
+            { name: "GP Singapuru - Marina Bay", lat: 1.283, lon: 103.851, date: "5 października 2025", time: "14:00", image: "https://oversteer48.com/wp-content/uploads/2023/06/Spa-Francorchamps-Grand-Prix-Circuit-Layout-2-1024x807.jpg" },
+            { name: "GP USA - COTA", lat: 30.132, lon: -97.641, date: "19 października 2025", time: "21:00", image: "https://cdn-5.motorsport.com/images/ltp/AQ68zl2L/s6/circuit-of-the-americas.png" },
+            { name: "GP Meksyku - Hermanos Rodríguez", lat: 19.404, lon: -99.093, date: "26 października 2025", time: "21:00", image: "https://cdn-2.motorsport.com/images/ltp/4B2Go29v/s6/autodromo-hermanos-rodriguez.png" },
+            { name: "GP Brazylii - Interlagos", lat: -23.703, lon: -46.697, date: "9 listopada 2025", time: "18:00", image: "https://cdn-7.motorsport.com/images/ltp/xl0LvVYq/s6/autodromo-jose-carlos-pace.png" },
+            { name: "GP Las Vegas - Las Vegas Strip", lat: 36.166, lon: -115.150, date: "23 listopada 2025", time: "5:00", image: "https://th.bing.com/th/id/R.79c336028564aa3f4f98189c8ebcce78?rik=VMyYxZ9jS2J9QQ&pid=ImgRaw&r=0" },
+            { name: "GP Kataru - Losail", lat: 25.484, lon: 51.488, date: "30 listopada 2025", time: "17:00", image: "https://th.bing.com/th/id/OIP.zDroXT4Qr54oaQR1T3j0owHaEK?cb=iwc2&rs=1&pid=ImgDetMain" },
+            { name: "GP Abu Zabi - Yas Marina", lat: 24.467, lon: 54.604, date: "7 grudnia 2025", time: "14:00", image: "https://cdn-6.motorsport.com/images/ltp/xl0LVJYq/s6/yas-marina-circuit-abu-dhabi-2.png" }
+        ];
+
+        circuits.forEach(circuit => {
+            L.marker([circuit.lat, circuit.lon]).addTo(map)
+                .bindPopup(`<b>${circuit.name}</b><br>📅 Data: ${circuit.date}<br>🕒 Godzina: ${circuit.time}<br><img src="${circuit.image}" class="popup-image">`);
+        });
+    </script>
+</body>
